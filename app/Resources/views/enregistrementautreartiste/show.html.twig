@@ -1,0 +1,100 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Enregistrementautreartiste</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ enregistrementAutreArtiste.id }}</td>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <td>{{ enregistrementAutreArtiste.name }}</td>
+            </tr>
+            <tr>
+                <th>Surname</th>
+                <td>{{ enregistrementAutreArtiste.surname }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ enregistrementAutreArtiste.email }}</td>
+            </tr>
+            <tr>
+                <th>Ville</th>
+                <td>{{ enregistrementAutreArtiste.ville }}</td>
+            </tr>
+            <tr>
+                <th>Nomartiste</th>
+                <td>{{ enregistrementAutreArtiste.nomArtiste }}</td>
+            </tr>
+            <tr>
+                <th>Link1</th>
+                <td>{{ enregistrementAutreArtiste.link1 }}</td>
+            </tr>
+            <tr>
+                <th>Link2</th>
+                <td>{{ enregistrementAutreArtiste.link2 }}</td>
+            </tr>
+            <tr>
+                <th>Link3</th>
+                <td>{{ enregistrementAutreArtiste.link3 }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ enregistrementAutreArtiste.description }}</td>
+            </tr>
+            <tr>
+                <th>Autrecategorie</th>
+                <td>{{ enregistrementAutreArtiste.autreCategorie }}</td>
+            </tr>
+            <tr>
+                <th>Number1</th>
+                <td>{{ enregistrementAutreArtiste.number1 }}</td>
+            </tr>
+            <tr>
+                <th>Number2</th>
+                <td>{{ enregistrementAutreArtiste.number2 }}</td>
+            </tr>
+            <tr>
+                <th>Lu</th>
+                <td>{% if enregistrementAutreArtiste.lu %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Confirm</th>
+                <td>{% if enregistrementAutreArtiste.confirm %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Groupe</th>
+                <td>{% if enregistrementAutreArtiste.groupe %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Solo</th>
+                <td>{% if enregistrementAutreArtiste.solo %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Sexe</th>
+                <td>{{ enregistrementAutreArtiste.sexe }}</td>
+            </tr>
+            <tr>
+                <th>Style</th>
+                <td>{{ enregistrementAutreArtiste.style }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('admin_enregistrement_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('admin_enregistrement_edit', { 'id': enregistrementAutreArtiste.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

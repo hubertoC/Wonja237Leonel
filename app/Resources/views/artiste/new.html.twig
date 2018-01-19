@@ -1,0 +1,58 @@
+{% extends 'layoutP.html.twig' %}
+
+{% block body %}
+    <h1>Artiste creation</h1>
+    <div class= "cration_artiste">
+   {{ form_start(form) }}
+       <div class="cration mdl-shadow--2dp">
+         <div class="form_creation">
+           <div class="form-groupe">
+           {{ form_row(form.name, {'attr':{'class':'form-control'}})}}
+             {{ form_row(form.surname, {'attr':{'class':'form-control'}})}}
+   {{ form_row(form.ville, {'attr':{'class':'form-control'}})}}
+   {{ form_row(form.email, {'attr':{'class':'form-control'}})}}
+   {{ form_row(form.sexe, {'attr':{'class':'form-control'}})}}
+   {{ form_row(form.style, {'attr':{'class':'form-control'}})}}
+   {{ form_row(form.status, {'attr':{'class':'form-control'}})}}
+   {{ form_row(form.number, {'attr':{'class':'form-control'}})}}
+   {{ form_row(form.description, {'attr':{'class':'form-control'}})}}
+<br>
+   <div class="jumbotron">
+     {{ form_row(form.image.file)}}
+     <br>
+     {{ form_row(form.categories, {'attr':{'class':'form-control'}})}}
+     <br>
+     Video Youtube:
+     {{ form_row(form.video.url, {'attr':{'class':'form-control'}})}}
+
+    <div>
+
+    </div>
+
+   </br>
+
+           {{ form_widget(form) }}
+           </div>
+         </div>
+
+
+
+
+
+         <input class="mdl-button mdl-js-button mdl-button--raised" type="submit" value="Valider" />
+           {{ form_end(form) }}
+           <ul>
+
+               <li>
+                 <div class="lon">
+
+                   <a class="mdl-button mdl-js-button mdl-button--raised" href="{{ path('adminArtiste_index') }}"><i class="glyphicon glyphicon-chevron-left"></i>Retour á la list</a>
+                 </div>
+
+               </li>
+
+           </ul>
+         </div>
+
+           </div>
+{% endblock %}

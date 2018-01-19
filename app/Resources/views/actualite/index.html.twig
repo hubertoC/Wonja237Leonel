@@ -1,0 +1,41 @@
+{% extends 'layoutP.html.twig' %}
+
+{% block body %}
+    <h1>Actualites list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Content</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for actualite in actualites %}
+            <tr>
+                <td><a href="{{ path('admin_actualite_show', { 'id': actualite.id }) }}">{{ actualite.id }}</a></td>
+                <td>{{ actualite.title }}</td>
+                <td>{{ actualite.content }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('admin_actualite_show', { 'id': actualite.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('admin_actualite_edit', { 'id': actualite.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('admin_actualite_new') }}">Create a new actualite</a>
+        </li>
+    </ul>
+{% endblock %}

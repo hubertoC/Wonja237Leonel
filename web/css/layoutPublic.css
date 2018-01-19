@@ -1,0 +1,145 @@
+/* Navigation */
+#menu {
+	padding: 20px;
+	transition: all 0.8s;
+}
+#menu.navbar-default {
+	background-color: #000;
+	border-color: rgba(231, 231, 231, 0);
+}
+#menu a.navbar-brand {
+	font-size: 22px;
+	color: #ddd;
+	font-weight: 700;
+}
+#menu a.navbar-brand i.fa {
+	color: #88bb45;
+}
+#menu.navbar-default .navbar-nav > li > a {
+	text-transform: uppercase;
+	color: #bbbbbb;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+#menu.navbar-default .navbar-nav > li > a:hover {
+	color: #3d0099;
+}
+.on {
+	background-color: #000 !important;
+	padding: 0 !important;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #71bd46 !important;
+	background-color: transparent;
+}
+.navbar-toggle {
+	border-radius: 0;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: #3d0099;
+	border-color: #3d0099;
+}
+.navbar-default .navbar-toggle:hover>.icon-bar {
+	background-color: #FFF;
+
+}
+.themecolor{
+	color: #3d0099;
+}
+#menu > div > div.navbar-header > button{
+  background: #3d0099;
+}
+.site-footer {
+  background: #000;
+  font-size: 0.93em;
+}
+
+.site-footer small {
+  display: inline-block;
+}
+
+.footer-links, .site-footer small {
+  margin: 0 0 .75em;
+}
+
+.site-footer small, .footer-links a {
+  color: #000;
+  font-weight: 300;
+  font-size: 0.93em;
+}
+
+#eight > div > div > div.col-md-4.wonjaReserved > small{
+	color: #fff;
+}
+
+.footer-links a:first-child {
+  padding-right: .4em;
+}
+
+#menu > div > div.navbar-header > a > span.vert{
+	color: green;
+}
+#menu > div > div.navbar-header > a > span.rouge{
+	color: red;
+}
+#menu > div > div.navbar-header > a > span.jaune{
+	color: yellow;
+}
+/*----------------SOCIAL
+
+-------------------------------------------------------*/
+
+.social li {
+  display: inline-block;
+  padding-right: .5em;
+  text-align: center;
+}
+
+.social li:last-child {
+  padding-right: 0;
+}
+
+.social li a {
+  display: block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  border-radius: 50%;
+  position: relative;
+  transition: all .8s ease;
+  font-size: 1.3em;
+  background: #D6D6D6;
+}
+
+.social li a:hover {
+  background: #3d0099;
+}
+.footer-links img{
+	width: 10em;
+}
+
+#menu > div > div.navbar-header > a > span{
+	color: #3d0099;
+}
+@media (max-width: 768px) {
+.content {
+	padding: 40% 0 0;
+}
+}
+
+@media (max-width: 603px) {
+#menu.navbar-default {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+#menu > div > div.navbar-header > button{
+	color: #3d0099;
+	background-color: #3d0099
+}
+label {
+	float: none !important
+}
+.hover-bg .hover-text {
+	padding: 15% 10%;
+}
+}

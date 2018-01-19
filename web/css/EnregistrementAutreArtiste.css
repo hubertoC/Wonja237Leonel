@@ -1,0 +1,66 @@
+body{
+  background-color: #3d0099;
+  color: #fff;
+}
+.title{
+  color: #3d0099;
+  background-color: #E0E0E0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 1em;
+  margin-bottom: 2em;
+}
+.premierBlock{
+  margin: 9em;
+  background-color: #D1C4E9;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.premierBlock .texte{
+  padding-bottom: 14em;
+}
+.titreBlock2{
+  color: #3d0099;
+  font-size: 1.2em;
+  padding-top: 1em;
+}
+body > div:nth-child(11) > div:nth-child(3) > div:nth-child(4) > center > button{
+  font-size: 2em;
+  background-color: green;
+  color: #fff;
+}
+.regleEtCondition{
+  height: 300px;
+  overflow: auto;
+  background-color: #fff;
+  color: #000;
+  margin: 2em;
+  padding: 1em;
+}
+body > form > div > div.regleEtCondition .condition{
+  color: blue;
+}
+
+body > form > div > div.regleEtCondition{
+  padding: 1em;
+}
+
+
+@media (max-width: 480px){
+  .premierBlock{
+    margin: 2em;
+  }
+  body > div:nth-child(11) > div:nth-child(3) > div.row.premierBlock > div > label:nth-child(3) > span{
+    margin-left: 2em;
+  }
+  body > div:nth-child(11) > div:nth-child(3) > div.row.premierBlock > div > label:nth-child(6) > span{
+    margin-left: 1em;
+  }
+  #hz_wonja237bundle_EnregistrementAutreArtiste_lu{
+    position: absolute;
+  }
+  #hz_wonja237bundle_EnregistrementAutreArtiste_confirm{
+    position: absolute;
+  }
+}

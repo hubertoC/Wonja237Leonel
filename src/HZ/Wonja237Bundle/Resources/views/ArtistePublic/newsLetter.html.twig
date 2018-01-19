@@ -1,0 +1,23 @@
+<link rel="stylesheet" type="text/css" href="{{ asset('css/newsLetter.css') }}">
+
+
+<section class="home-newsletter" >
+<div class="container" >
+<div class="row">
+<div class="col-sm-12">
+	<div class="single" id="Newsletter">
+		<h2>Abonnez-vous à notre newsletter</h2>
+    {{ form_start(form , {attr: {class: 'input-group'} }) }}
+
+    {{ form_row(form.email, {'attr':{'class':'form-control' , 'placeholder':'Entrez votre E-Mail'}})}}
+         <span class="input-group-btn">
+         {{ form_widget(form.save, { 'label': 'S\'abonner' }) }}
+         </span>
+         {{ form_end(form) }}
+
+
+	</div>
+</div>
+</div>
+</div>
+</section>

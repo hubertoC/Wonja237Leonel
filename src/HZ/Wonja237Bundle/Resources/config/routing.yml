@@ -1,0 +1,68 @@
+hz_wonja237_homepage:
+    path:     /
+    defaults: { _controller: HZWonja237Bundle:Default:index }
+
+fos_user_security:
+    resource: "@FOSUserBundle/Resources/config/routing/security.xml"
+
+fos_user_profile:
+    resource: "@FOSUserBundle/Resources/config/routing/profile.xml"
+    prefix: /profile
+
+fos_user_register:
+    resource: "@FOSUserBundle/Resources/config/routing/registration.xml"
+    prefix: /register
+
+fos_user_resetting:
+    resource: "@FOSUserBundle/Resources/config/routing/resetting.xml"
+    prefix: /resetting
+
+fos_user_change_password:
+    resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
+    prefix: /profile
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
+
+
+
+
+hz_wonja237_adminArtiste:
+    resource: "@HZWonja237Bundle/Resources/config/routing/artiste.yml"
+    prefix:   /admin
+
+hz_wonja237_public:
+    resource: "@HZWonja237Bundle/Resources/config/routing/publicRouting.yml"
+
+
+hz_wonja237_category:
+        resource: "@HZWonja237Bundle/Resources/config/routing/category.yml"
+        prefix:   admin/category
+
+
+hz_wonja237_publicites:
+        resource: "@HZWonja237Bundle/Resources/config/routing/publicites.yml"
+        prefix:   admin/publicites
+
+hz_wonja237_publicitedefile:
+        resource: "@HZWonja237Bundle/Resources/config/routing/publicitedefile.yml"
+        prefix:   admin/publicitedefile
+hz_wonja237_admin_actualite:
+        resource: "@HZWonja237Bundle/Resources/config/routing/actualite.yml"
+        prefix:   admin/actualite
+
+hz_wonja237_admin_reservation:
+        resource: "@HZWonja237Bundle/Resources/config/routing/reservation.yml"
+        prefix:   /admin/reservation
+
+
+hz_wonja237_admin_enregistrement:
+        resource: "@HZWonja237Bundle/Resources/config/routing/enregistrementautreartiste.yml"
+        prefix:   /admin/enregistrement
+
+tuto_starratingsystem:
+    path:     /starratingsystem
+    defaults: { _controller: HZWonja237Bundle:Starratingsystem:index }
+
+ajax_star_rating_system:
+  path:  /ajax/starrating/update/data
+  defaults: { _controller: HZWonja237Bundle:AjaxStarratingsystem:updateData }

@@ -1,0 +1,23 @@
+{% extends 'layoutP.html.twig' %}
+{% block body %}
+<h1>Cree une Publicitée</h1>
+<div class= "cration_artiste">
+  <div class="cration mdl-shadow--2dp">
+    <div class="form_creation">
+      <div class="form-groupe">
+    {{ form_start(form) }}
+    {{ form_row(form.name, {'attr':{'class':'form-control'}})}}
+    {{ form_row(form.description, {'attr':{'class':'form-control'}})}}
+    {{ form_row(form.link, {'attr':{'class':'form-control'}})}}
+
+        {{ form_widget(form) }}
+        <br>
+        <input type="submit" value="Create" class="mdl-button mdl-js-button mdl-button--raised"/>
+    {{ form_end(form) }}
+
+    <ul>
+        <li>
+            <a class="mdl-button mdl-js-button mdl-button--raised" href="{{ path('publicitedefile_index') }}">Retour</a>
+        </li>
+    </ul>
+{% endblock %}

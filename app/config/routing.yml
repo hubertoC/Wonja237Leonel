@@ -1,0 +1,3 @@
+hz_wonja237:
+    resource: "@HZWonja237Bundle/Resources/config/routing.yml"
+    prefix:   /

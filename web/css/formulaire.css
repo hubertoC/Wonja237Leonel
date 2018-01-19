@@ -1,0 +1,326 @@
+a:hover, a:focus {
+  text-decoration: none;
+  color: #eee;
+}
+#home > div > form > div.container-fluid > div > div > label{
+  color: #fff;
+}
+#hz_wonja237bundle_enregistrement_image_file{
+  color: #fff;
+}
+
+.login-card {
+  min-height: 120vh;
+  background-image: url('http://www.sqoop.co.ug/wp-content/uploads/2016/08/Modern-fashion-party.jpeg');
+  background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -wenkit-background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+  z-index: 2;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: roboto!important;
+}
+
+.login-card:after {
+  background: linear-gradient(-135deg, rgb(63, 81, 181), rgb(233, 30, 99));
+  /* Login Card Arkaplan Rengi */
+  background: -webkit-linear-gradient(-135deg, rgb(63, 81, 181), rgb(233, 30, 99));
+  /* Login Card Arkaplan Rengi */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  opacity: 0.8;
+  z-index: 3;
+}
+
+.login-card>form {
+  z-index: 4;
+  position: relative;
+  padding: 0px 25px;
+  width: 100%;
+}
+
+.logo-kapsul {
+  text-align: center;
+  position: relative;
+  opacity: 0.8;
+}
+
+.logo {
+  height: auto;
+  padding: 50px 0px;
+}
+
+
+/* form başlangıç stiller ------------------------------- */
+
+.condition {
+  color: #1565C0;
+  font-size: 1.5em;
+}
+
+.group {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.group input {
+  font-size: 18px;
+  padding: 10px 10px 10px 10px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  background: none;
+  color: #eee;
+}
+
+.group input:focus {
+  outline: none;
+}
+
+
+/* LABEL ======================================= */
+
+.group label {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 5px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+
+/* active durum */
+
+.group input:focus~label, input:valid~label {
+  top: -20px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* BOTTOM BARS ================================= */
+
+.bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.bar:before, .bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.7);
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+
+/* active durum bar */
+
+.group input:focus~.bar:before, .group input:focus~.bar:after {
+  width: 50%;
+}
+
+
+/* HIGHLIGHTER ================================== */
+
+.highlight {
+  position: absolute;
+  height: 0%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+
+/* active durum */
+
+.group input:focus~.highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+
+
+/* form animasyon ================ */
+
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: rgba(255, 255, 255, 0.7);
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+@-moz-keyframes inputHighlighter {
+  from {
+    background: rgba(255, 255, 255, 0.7);
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+@keyframes inputHighlighter {
+  from {
+    background: rgba(255, 255, 255, 0.7);
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+.input-ikon {
+  font-size: 25px!important;
+  position: relative;
+}
+
+.input-sifre-ikon {
+  font-size: 22px!important;
+  position: relative;
+}
+
+.span-input {
+  margin-left: 10px;
+  position: relative;
+  top: -5px;
+}
+
+.giris-yap-buton, .kayit-ol-buton, .sifre-hatirlat-buton {
+  background: linear-gradient(-135deg, rgb(63, 81, 181), rgb(233, 30, 99));
+  background: -webkit-linear-gradient(-135deg, rgb(63, 81, 181), rgb(233, 30, 99));
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #eee;
+  font-family: roboto;
+  font-weight: 100;
+  padding: 10px;
+  border-radius: 3px;
+  outline: none;
+  opacity: 0.8;
+}
+
+.forgot-and-create {
+  margin: 20px 0px;
+}
+
+.forgot-and-create a {
+  color: #bbb;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: 100;
+  margin-right: 10px;
+}
+
+
+/* Geçiş Links Forgot and Create */
+
+.zaten-hesap-var-link {
+  color: #bbb;
+  font-size: 14px;
+  padding: 20px 0px;
+  text-decoration: none;
+  display: block;
+}
+
+.nav-tabs {
+  border-bottom: 2px solid #DDD;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  border-width: 0;
+}
+
+.nav-tabs>li>a {
+  border: none;
+  color: #666;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li>a:hover {
+  border: none;
+  color: #4285F4 !important;
+  background: transparent;
+}
+
+.nav-tabs>li>a::after {
+  content: "";
+  background: #4285F4;
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: -1px;
+  transition: all 250ms ease 0s;
+  transform: scale(0);
+}
+
+.nav-tabs>li.active>a::after, .nav-tabs>li:hover>a::after {
+  transform: scale(1);
+}
+
+.tab-nav>li>a::after {
+  background: #21527d none repeat scroll 0% 0%;
+  color: #fff;
+}
+
+.tab-pane {
+  padding: 15px 0;
+}
+
+.tab-content {
+  padding: 20px
+}
+
+.card {
+  background: #FFF none repeat scroll 0% 0%;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+}
+
+.exigence {
+  color: #fff;
+}

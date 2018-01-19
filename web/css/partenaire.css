@@ -1,0 +1,24 @@
+.containerP {
+	text-align: center;
+
+}
+.containerP ul {
+	border: 2px solid  #3d0099;
+	display: inline-block;
+	margin: 10px 0;
+	padding: 2px;
+}
+.containerP li {
+	display: inline-block;
+}
+.containerP li a {
+	display: inline-block;
+	background: #fff;
+	color: #FFF;
+	padding: 5px;
+	text-decoration: none;
+}
+.containerP img{
+  width: 8em;
+  height: 8em;
+}

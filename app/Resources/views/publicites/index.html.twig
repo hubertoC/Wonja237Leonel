@@ -1,0 +1,46 @@
+{% extends 'layoutP.html.twig' %}
+
+{% block body %}
+    <h1>Les publicites</h1>
+
+    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Profile</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for publicite in publicites %}
+            <tr>
+                <td><a href="{{ path('publicites_show', { 'id': publicite.id }) }}">{{ publicite.id }}</a></td>
+                <td><img src="{{ asset(publicite.webPath)}}" height="42" width="42" ></td>
+
+
+                <td>{{ publicite.name }}</td>
+                <td>{{ publicite.description }}</td>
+
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('publicites_show', { 'id': publicite.id }) }}"><i class="glyphicon glyphicon-info-sign"></i></a>
+                        </li>
+                        <li>
+                            <a href="{{ path('publicites_edit', { 'id': publicite.id }) }}"><i class="glyphicon glyphicon-pencil"></i></a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+<br>
+    <ul>
+        <li>
+            <a href="{{ path('publicites_new') }}" class="mdl-button mdl-js-button mdl-button--raised" >Create a new publicite</a>
+        </li>
+    </ul>
+{% endblock %}

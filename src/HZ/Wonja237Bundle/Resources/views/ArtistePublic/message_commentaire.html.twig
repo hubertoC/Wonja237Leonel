@@ -1,0 +1,10 @@
+{% for commentaire in artiste.commentaire %}
+  <div class="commentaire-nom">
+    {{commentaire.name}}
+    <span class="commentaire-content">
+      :&nbsp
+      {{commentaire.contenu}}</span>
+  </div>
+
+  <br>
+{% endfor %}

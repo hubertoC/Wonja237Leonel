@@ -1,0 +1,138 @@
+{% extends 'layoutPublic.html.twig' %}
+
+{% block body %}
+<link rel="stylesheet" type="text/css" href="{{ asset('css/cat_artiste.css') }}">
+<br><br><br>
+<div class="container" id="cont">
+  <section class="row">
+    <div class="col-md-12  text-center">
+      <h3 class="title">
+        <br><br>
+
+        <span class="themecolor">
+
+          <spam class="catName">
+            <U>{{ name }}</spam>
+          </U>
+        </span>
+
+      </h3>
+      <br>
+    </div>
+    <div class="container">
+      <br><br>
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Nav tabs -->
+          <div class="card">
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Tous les artistes</a>
+              </li>
+
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="home">
+
+                <div class="login-card">
+
+                  <div class="espace"></div>
+
+                  <section class="row hidden-xs">
+                    <div class="col-md-12">
+                      {% if not artiste %}
+                      <div class="themecolor infos">
+                        Il y a pas encore d'Artiste dans cette Catégorie!
+                      </div>
+                      {% endif %}
+                      {% for item in artiste %}
+                        <div class="grid" id="London">
+                          <figure class="effect-sarah">
+                            <div class="col-xs-12 col-md-12">
+                              <img class="img-responsive"src="{{ asset(item.image.webPath)}}" alt="img13"/>
+                            </div>
+                            <figcaption>
+                              <h2 class="nonArtiste">
+                                &nbsp;<span>{{item.name}}</span>
+
+                              </h2>
+                              <p>réserver maintenant</p>
+                              <a href="{{ path('hz_wonja237_profile', {'id': item.id}) }}"></a>
+                            </figcaption>
+                          </figure>
+                        </div>
+                      {% endfor %}
+                    </section>
+                    <br>
+                  </div>
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="messages">
+                  {% for item in artiste %}
+                    <div class="grid" id="">
+                      <figure class="effect-sarah">
+                        <img src="{{ asset(item.image.webPath)}}" alt="img13"/>
+                        <figcaption>
+                          <h2>
+                            <span>Raum:
+                            </span>
+                            &nbsp;&nbsp;<span>{{item.name}}</span>
+                          </h2>
+                          <p>Buchung und weitere Informationen!</p>
+                          <a href="#"></a>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  {% endfor %}
+                </div>
+              </section>
+            </div>
+
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--small cards-->
+<div class="container">
+   <div class="row hidden-sm hidden-lg">
+     {% for item in artiste %}
+     <div class="col-md-3">
+       <div class="card222">
+         <div class="card-content">
+
+           <div class="card-body">
+             <a href="{{ path('hz_wonja237_profile', {'id': item.id}) }}">
+
+<img src="{{ asset(item.image.webPath)}}" alt="img13"/>
+           </div>
+
+           <nav class="nav-tabs">
+             <ul class="nav nav-pills pull-left">
+               <li>
+                 <a class="card-action-red" href="#">{{item.name}} {{item.surname}} </a>
+               </li>
+
+             </ul>
+
+           </nav>
+</a>
+         </div>
+       </div>
+     </div>
+{% endfor %}
+
+
+
+
+ </div>
+
+ </div>
+
+{% endblock %}

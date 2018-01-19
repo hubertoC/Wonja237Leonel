@@ -1,0 +1,31 @@
+{% extends 'layoutP.html.twig' %}
+{% block body %}
+    <h1>Cree une categorie</h1>
+    <div class= "cration_artiste">
+      <div class="cration mdl-shadow--2dp">
+        <div class="form_creation">
+          <div class="form-groupe">
+      {{ form_start(edit_form) }}
+{{ form_row(edit_form.name, {'attr':{'class':'form-control'}})}}
+
+<br>
+        {{ form_widget(edit_form) }}
+        <div>
+          <br>
+  <input type="submit" value="Create" class="mdl-button mdl-js-button mdl-button--raised" />
+    {{ form_end(edit_form) }}
+    <ul>
+
+        <li>
+          <div class="lon">
+
+            <a class="mdl-button mdl-js-button mdl-button--raised"  href="{{ path('category_index') }}">Back to the list</a>
+          </div>
+
+        </li>
+
+    </ul>
+</div>
+</div>
+
+{% endblock %}

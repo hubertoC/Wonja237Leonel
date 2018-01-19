@@ -1,0 +1,49 @@
+body{
+  background-color: #3d0099;
+  color: #fff;
+}
+.title{
+  color: #3d0099;
+  background-color: #E0E0E0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 1em;
+  margin-bottom: 2em;
+}
+
+.contentForme{
+  background: #E0E0E0;
+  margin: 9em;
+  padding: 1em;
+  color: #000;
+}
+.titreblock{
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+
+.titreblock1{
+  font-size: 2em;
+  margin-bottom: 1em;
+  float: left;
+}
+.note{
+  padding-bottom: 1em;
+}
+
+.waves-effect{
+  font-size: 2em;
+}
+
+body > div.row.contentForme > fieldset > div:nth-child(39) > div > center > div > button{
+  background-color: #3d0099;
+  color: #fff;
+}
+
+
+@media (max-width: 480px){
+  .contentForme{
+    margin: 1em;
+  }
+}

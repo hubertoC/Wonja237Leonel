@@ -1,0 +1,73 @@
+{% extends 'layoutP.html.twig' %}
+
+{% block body %}
+    <h1>Liste d'enregistrement d'Artiste</h1>
+
+    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Email</th>
+                <th>Ville</th>
+                <th>Nomartiste</th>
+                <th>Link1</th>
+                <th>Link2</th>
+                <th>Link3</th>
+                <th>Description</th>
+                <th>Autrecategorie</th>
+                <th>Number1</th>
+                <th>Number2</th>
+                <th>Lu</th>
+                <th>Confirm</th>
+                <th>Groupe</th>
+                <th>Solo</th>
+                <th>Sexe</th>
+                <th>Style</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for enregistrementAutreArtiste in enregistrementAutreArtistes %}
+            <tr>
+                <td><a href="{{ path('admin_enregistrement_show', { 'id': enregistrementAutreArtiste.id }) }}">{{ enregistrementAutreArtiste.id }}</a></td>
+                <td>{{ enregistrementAutreArtiste.name }}</td>
+                <td>{{ enregistrementAutreArtiste.surname }}</td>
+                <td>{{ enregistrementAutreArtiste.email }}</td>
+                <td>{{ enregistrementAutreArtiste.ville }}</td>
+                <td>{{ enregistrementAutreArtiste.nomArtiste }}</td>
+                <td>{{ enregistrementAutreArtiste.link1 }}</td>
+                <td>{{ enregistrementAutreArtiste.link2 }}</td>
+                <td>{{ enregistrementAutreArtiste.link3 }}</td>
+                <td>{{ enregistrementAutreArtiste.description }}</td>
+                <td>{{ enregistrementAutreArtiste.autreCategorie }}</td>
+                <td>{{ enregistrementAutreArtiste.number1 }}</td>
+                <td>{{ enregistrementAutreArtiste.number2 }}</td>
+                <td>{% if enregistrementAutreArtiste.lu %}Yes{% else %}No{% endif %}</td>
+                <td>{% if enregistrementAutreArtiste.confirm %}Yes{% else %}No{% endif %}</td>
+                <td>{% if enregistrementAutreArtiste.groupe %}Yes{% else %}No{% endif %}</td>
+                <td>{% if enregistrementAutreArtiste.solo %}Yes{% else %}No{% endif %}</td>
+                <td>{{ enregistrementAutreArtiste.sexe }}</td>
+                <td>{{ enregistrementAutreArtiste.style }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('admin_enregistrement_show', { 'id': enregistrementAutreArtiste.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('admin_enregistrement_edit', { 'id': enregistrementAutreArtiste.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('admin_enregistrement_new') }}">Create a new enregistrementAutreArtiste</a>
+        </li>
+    </ul>
+{% endblock %}

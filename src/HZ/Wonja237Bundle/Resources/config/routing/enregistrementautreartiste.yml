@@ -1,0 +1,24 @@
+admin_enregistrement_index:
+    path:     /
+    defaults: { _controller: "HZWonja237Bundle:EnregistrementAutreArtiste:index" }
+    methods:  GET
+
+admin_enregistrement_show:
+    path:     /{id}/show
+    defaults: { _controller: "HZWonja237Bundle:EnregistrementAutreArtiste:show" }
+    methods:  GET
+
+admin_enregistrement_new:
+    path:     /new
+    defaults: { _controller: "HZWonja237Bundle:EnregistrementAutreArtiste:new" }
+    methods:  [GET, POST]
+
+admin_enregistrement_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "HZWonja237Bundle:EnregistrementAutreArtiste:edit" }
+    methods:  [GET, POST]
+
+admin_enregistrement_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "HZWonja237Bundle:EnregistrementAutreArtiste:delete" }
+    methods:  DELETE

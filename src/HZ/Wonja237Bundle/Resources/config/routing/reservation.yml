@@ -1,0 +1,24 @@
+admin_reservation_index:
+    path:     /
+    defaults: { _controller: "HZWonja237Bundle:Reservation:index" }
+    methods:  GET
+
+admin_reservation_show:
+    path:     /{id}/show
+    defaults: { _controller: "HZWonja237Bundle:Reservation:show" }
+    methods:  GET
+
+admin_reservation_new:
+    path:     /new
+    defaults: { _controller: "HZWonja237Bundle:Reservation:new" }
+    methods:  [GET, POST]
+
+admin_reservation_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "HZWonja237Bundle:Reservation:edit" }
+    methods:  [GET, POST]
+
+admin_reservation_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "HZWonja237Bundle:Reservation:delete" }
+    methods:  DELETE

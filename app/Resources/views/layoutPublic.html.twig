@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ asset('library/font-awesome-4.3.0/css/font-awesome.min.css') }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/layoutPublic.css') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/thumbnail.png') }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/color/rose.css') }}">
+
+    <title>
+      {% block title %}Wonja237{% endblock %}
+    </title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/publicPage.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/contact.css') }}">
+
+
+  </head>
+
+  <body>
+
+    {% block head %}
+    <!-- Navigation
+  ==========================================-->
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{{ path('hz_wonja237_homepage')}}">
+            <span class="themecolor">Wonja</span><span class="vert">2</span><span class="rouge">3</span><span class="jaune">7</span></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="{{ path('hz_wonja237_homepage')}}" class="page-scroll">Accueil</a>
+            </li>
+            <li>
+              <a href="{{ path('hz_wonja237bundle_contact')}}" class="page-scroll">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+  {% endblock %}
+
+    {% block body %}{% endblock %}
+
+
+    <footer class="site-footer section-spacing text-center " id="eight">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4"></br>
+          <p class="footer-links">
+            <img src="{{ asset('images/websoft.png') }}" alt="" class="websoftLogo">
+          </p>
+
+        </div>
+
+        <div class="col-md-4 wonjaReserved"></br>
+        <small>&copy; 2017 Wonja237 reserved.</small>
+      </div>
+      <div class="col-md-4"></br>
+      <ul class="social">
+        <li>
+          <a href="https://twitter.com/wonja_Elle" target="_blank">
+            <i class="fa fa-twitter "></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/FeelBefree/" target="_blank">
+            <i class="fa fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCLz84ljmJDyl8HToevivDNQ" target="_blank">
+            <i class="fa fa-youtube-play"></i>
+          </a>
+        </li>
+      </ul>
+    </br>
+
+  </div>
+  </div>
+  </div>
+  </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="{{ asset('js/jquery.cookie.js') }}"></script>
+<script src="{{ asset('js/precise-star-rating.js') }}"></script>
+
+<script>
+var loader = "{{ asset('images/loader-small.gif') }}";
+var ROOT_URL = "{{ url('hz_wonja237_homepage')}}";
+</script>
+
+</body>
+</html>

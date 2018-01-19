@@ -1,0 +1,43 @@
+{% extends 'layoutP.html.twig' %}
+
+{% block body %}
+    <h1>Categories list</h1>
+    <table  class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for category in categories %}
+            <tr>
+                <td><a href="{{ path('category_show', { 'id': category.id }) }}">{{ category.id }}</a></td>
+                <td><img src="{{ asset(category.webPath)}}" height="42" width="42" ></td>
+
+                <td>{{ category.name }}</td>
+
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('category_show', { 'id': category.id }) }}"><i class="glyphicon glyphicon-info-sign"></i></a>
+                        </li>
+                        <li>
+                            <a href="{{ path('category_edit', { 'id': category.id }) }}"><i class="glyphicon glyphicon-pencil"></i></a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+          <br>
+            <a class="mdl-button mdl-js-button mdl-button--raised" href="{{ path('category_new') }}">Create a new category</a>
+        </li>
+    </ul>
+{% endblock %}

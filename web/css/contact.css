@@ -1,0 +1,183 @@
+/*Contact sectiom*/
+
+.content-header {
+  font-family: 'Oleo Script', cursive;
+  color: #fcc500;
+  font-size: 45px;
+}
+
+.section-content {
+  text-align: center;
+}
+
+#contact {
+  font-family: 'Teko', sans-serif;
+  padding-top: 60px;
+  width: 100%;
+  width: 100vw;
+  height: 850px;
+  background: #3a6186;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #3a6186, #89253e);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #3a6186, #89253e);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+}
+
+.contact-section {
+  padding-top: 40px;
+}
+
+.contact-section .col-md-6 {
+  width: 50%;
+}
+
+
+
+.form-group {
+  margin-top: 10px;
+}
+
+label {
+  font-size: 1.3em;
+  line-height: 1em;
+  font-weight: normal;
+}
+
+.form-control {
+  font-size: 1.3em;
+  color: #080808;
+}
+
+textarea.form-control {
+  height: 135px;
+  /* margin-top: px;*/
+}
+
+.submit {
+  font-size: 1.1em;
+  float: right;
+  width: 150px;
+  background-color: transparent;
+  color: #fff;
+}
+
+
+
+/* Removes the clear button from date inputs */
+div[id="hz_wonja237bundle_reservation_dateDeReservation"]::-webkit-clear-button {
+    display: none;
+}
+
+/* Removes the spin button */
+div[id="hz_wonja237bundle_reservation_dateDeReservation"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+/* Always display the drop down caret */
+div[id="hz_wonja237bundle_reservation_dateDeReservation"]::-webkit-calendar-picker-indicator {
+    color: #2c3e50;
+}
+
+/* A few custom styles for date inputs */
+div[id="hz_wonja237bundle_reservation_dateDeReservation"] {
+    appearance: none;
+    -webkit-appearance: none;
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 18px;
+    background:#ecf0f1;
+    padding:5px;
+    display: inline-block !important;
+    visibility: visible !important;
+}
+
+
+div[id="hz_wonja237bundle_reservation_dateDeReservation"], focus {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+#home > div > form > div:nth-child(9) > div > div.col-md-4.control-label > label{
+  color: #fff;
+}
+
+/* Removes the clear button from date inputs */
+#hz_wonja237bundle_reservation_startTime
+::-webkit-clear-button {
+    display: none;
+}
+
+/* Removes the spin button */
+#hz_wonja237bundle_reservation_startTime
+::-webkit-inner-spin-button {
+    display: none;
+}
+
+/* Always display the drop down caret */
+#hz_wonja237bundle_reservation_startTime
+::-webkit-calendar-picker-indicator {
+    color: #2c3e50;
+}
+
+/* A few custom styles for date inputs */
+#hz_wonja237bundle_reservation_startTime
+ {
+    appearance: none;
+    -webkit-appearance: none;
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 18px;
+    background:#ecf0f1;
+    padding:5px;
+    display: inline-block !important;
+    visibility: visible !important;
+}
+
+
+#hz_wonja237bundle_reservation_startTime
+, focus {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+
+
+
+
+
+
+#hz_wonja237bundle_reservation_lu{
+  position: absolute;
+  margin-left: 0.5em;
+}
+
+#home > div > form > div.row > div > div > div > div > label{
+  color: #fff;
+}
+#home > div > form > div.row > div:nth-child(2) > div > label{
+  color: #fff;
+}
+#contact > div > div.col-md-12 > p{
+  color: #fff;
+}
+
+@media (max-width: 480px){
+  #hz_wonja237bundle_reservation_dateDeReservation_date
+  {
+  float: left;
+  margin-right: 4em;
+  color: #000;
+
+  }
+  #contact{
+    height: 90em;
+  }
+
+
+  #home > div > form > div:nth-child(12) > label > span > label{
+    padding-bottom: 3em;
+    }
+
+}

@@ -1,0 +1,24 @@
+publicitedefile_index:
+    path:     /
+    defaults: { _controller: "HZWonja237Bundle:PubliciteDefile:index" }
+    methods:  GET
+
+publicitedefile_show:
+    path:     /{id}/show
+    defaults: { _controller: "HZWonja237Bundle:PubliciteDefile:show" }
+    methods:  GET
+
+publicitedefile_new:
+    path:     /new
+    defaults: { _controller: "HZWonja237Bundle:PubliciteDefile:new" }
+    methods:  [GET, POST]
+
+publicitedefile_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "HZWonja237Bundle:PubliciteDefile:edit" }
+    methods:  [GET, POST]
+
+publicitedefile_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "HZWonja237Bundle:PubliciteDefile:delete" }
+    methods:  DELETE

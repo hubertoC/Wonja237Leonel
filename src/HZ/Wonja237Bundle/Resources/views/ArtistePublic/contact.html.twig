@@ -1,0 +1,75 @@
+{% extends 'layoutPublic.html.twig' %}
+
+{% block body %}
+
+  <div class="">
+
+    <section id="contact">
+      <div class="section-content">
+        {% if app.session.flashbag.has('user-notice') %}
+          <div class="alert alert-success">
+            {% for msg in app.session.flashbag.get('user-notice') %}
+              <button type="button" class="close" data-dismiss="alert" name="button">
+
+                <span aria-hidden="true">&times;
+                </span>
+                <span class="sr-only">Close</span>
+              </button>
+              <a href="/" class="alert-link">{{ msg }}</a>
+
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        <br><br><br><br>
+        <img src="{{ asset('images/thumbnail.png') }}" width="200em" height="200em">
+        <h1 class="section-header">Entrez en contact avec nous
+          <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s">
+          </span>
+        </h1>
+        <h3>Avec ce formulaire, vous pouvez nous envoyer un message.
+        </h3>
+      </div>
+      {{ form_start(form) }}
+      <div class="col-md-6 form-line">
+        <div class="form-group">
+
+          {{ form_row(form.name, {'attr':{'class':'form-control'}})}}
+        </div>
+        <div class="form-group">
+
+          {{ form_row(form.email, {'attr':{'class':'form-control'}})}}
+
+        </div>
+        <div class="form-group">
+          {{ form_label(form.number, 'Téléphone:') }}
+          {{ form_widget(form.number,{'attr':{'class':'form-control'}})}}
+
+        </div>
+        <div class="form-group">
+
+          {{ form_row(form.ville, {'attr':{'class':'form-control'}})}}
+
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="form-group">
+          {{ form_row(form.content, {'attr':{'class':'form-control'}})}}
+        </div>
+        <div>
+
+          <button class="btn btn-default submit" type="submit">Envoyer<i class="fa fa-paper-plane" aria-hidden="true"></i>
+          </button><br>
+          {{ form_end(form) }}
+        </div>
+      </section>
+
+    </div>
+
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ asset('persocss/categories/style.css') }}" media="screen">
+
+  {% endblock %}
